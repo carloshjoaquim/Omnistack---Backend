@@ -12,4 +12,4 @@ mongoose.connect('mongodb+srv://oministack:oministack@oministack-o0q9k.mongodb.n
 server.use(cors());
 server.use(express.json());
 server.use(routes);
-server.listen(3333);
+server.listen(process.env.PORT || 5000)
